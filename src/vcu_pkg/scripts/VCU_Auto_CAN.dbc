@@ -1,0 +1,250 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BMS Auto VCU
+
+
+BO_ 2563038447 Auto_MotorEncoderFeedBack: 8 Vector__XXX
+ SG_ Auto_EncoderFeedBack_CheckSum : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_EncoderFeedBack_AliveCount : 52|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_MotorEncoderFeedBack_Count : 8|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Auto_EncoderFeedBack_Available : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 512 BMS_VoltageCurrentInformation: 8 BMS
+ SG_ MaximumSingleVoltage : 55|16@0+ (1,0) [0|0] ""  Auto
+ SG_ MinimumMonomerVoltage : 39|16@0+ (1,0) [0|0] ""  Auto
+ SG_ Electricity : 23|16@0- (10,0) [0|0] ""  Auto
+ SG_ TotalVoltage : 7|16@0+ (10,0) [0|0] ""  Auto
+
+BO_ 514 BMS_BatteryTemperatureTtate: 8 BMS
+ SG_ SOClowProtection : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Warning_SOC : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MinimumTemperature : 55|16@0+ (0.1,-273.1) [0|0] ""  Auto
+ SG_ MaximumTemperatureValue : 39|16@0+ (0.1,-273.1) [0|0] ""  Auto
+ SG_ Discharge_MOS : 25|1@0+ (1,0) [0|0] ""  Auto
+ SG_ Charge_MOS : 24|1@0+ (1,0) [0|0] ""  Auto
+ SG_ ChargeFlag : 23|8@0+ (1,0) [0|0] ""  Auto
+ SG_ Reserved : 5|1@0+ (1,0) [0|7] ""  Auto
+ SG_ SoftwareLockingMOS : 4|1@0+ (1,0) [0|0] ""  Auto
+ SG_ IC_Error : 3|1@0+ (1,0) [0|0] ""  Auto
+ SG_ ShortCircuitProtection : 2|1@0+ (1,0) [0|0] ""  Auto
+ SG_ DischargeOvercurrentProtection : 1|1@0+ (1,0) [0|0] ""  Auto
+ SG_ ChargeOvercurrentProtection : 0|1@0+ (1,0) [0|0] ""  Auto
+ SG_ DischargeLowTemperature : 15|1@0+ (1,0) [0|0] ""  Auto
+ SG_ DischargeHighTemperature : 14|1@0+ (1,0) [0|0] ""  Auto
+ SG_ ChargingLowTemperatureProtection : 13|1@0+ (1,0) [0|0] ""  Auto
+ SG_ OverheatProtectionForCharging : 12|1@0+ (1,0) [0|0] ""  Auto
+ SG_ GropUndervoltageProtection : 11|1@0+ (1,0) [0|1] ""  Auto
+ SG_ GroupOvervoltageProtection : 10|1@0+ (1,0) [0|0] ""  Auto
+ SG_ MonomerUndervoltageProtection : 9|1@0+ (1,0) [0|0] ""  Auto
+ SG_ MonomerOvervoltageProtection : 8|1@0+ (1,0) [0|0] ""  Auto
+
+BO_ 513 BMS_BatteryCapacityInformation: 8 BMS
+ SG_ RSOC : 55|16@0+ (1,0) [0|0] ""  Auto
+ SG_ NumberOfDischargeCycles : 39|16@0+ (1,0) [0|0] ""  Auto
+ SG_ FullOfCapacity : 23|16@0+ (10,0) [0|0] ""  Auto
+ SG_ BatteryCapacity : 7|16@0+ (10,0) [0|0] ""  Auto
+
+BO_ 2563038191 Auto_SpeakerFeedback: 8 VCU
+ SG_ Auto_SpeakerFeedback_CheckSum : 56|8@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_SpeakerFeedback_AliveCount : 52|4@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_Speaker3active_Speaker3 : 16|1@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_Speaker2active_Speaker2 : 8|1@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_Speaker1active_Speaker1 : 0|1@1+ (1,0) [0|0] ""  Auto
+
+BO_ 2563037392 Auto_SpeakerCmd: 8 Auto
+ SG_ Auto_SpeakerCmd_AliveCounter : 52|4@1+ (1,0) [0|0] ""  VCU
+ SG_ Auto_SpeakerCmd_CheckSum : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ AUTO_Speaker3Cmd_Speaker3En : 16|1@1+ (1,0) [0|0] ""  VCU
+ SG_ AUTO_Speaker2Cmd_Speaker2En : 8|1@1+ (1,0) [0|0] ""  VCU
+ SG_ AUTO_Speaker1Cmd_Speaker1En : 0|1@1+ (1,0) [0|0] ""  VCU
+
+BO_ 2563037935 Auto_LightFeedback: 8 VCU
+ SG_ Auto_Rightlightactive_Rightlight : 8|1@1+ (1,0) [0|1] ""  Auto
+ SG_ Auto_LightFeedback_CheckSum : 56|8@1+ (1,0) [0|255] ""  Auto
+ SG_ Auto_LightFeedback_AliveCounter : 52|4@1+ (1,0) [0|15] ""  Auto
+ SG_ Auto_Leftlightactive_Leftlight : 16|1@1+ (1,0) [0|1] ""  Auto
+ SG_ Auto_Headlightactive_Headlight : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563037136 Auto_lightCmd: 8 Auto
+ SG_ Auto_RightlightCmd_RightlightEn : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Auto_LightCmd_CheckSum : 56|8@1+ (1,0) [0|255] ""  VCU
+ SG_ Auto_LightCmd_AliveCounter : 52|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Auto_LeftlightCmd_LeftlightEn : 16|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Auto_HeadlightCmd_HeadlightEn : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 2563037679 Auto_MileageAndBodyFeedback: 8 VCU
+ SG_ Auto_MileageAndBodyFeedback_mod : 40|2@1+ (1,0) [0|3] ""  Auto
+ SG_ Auto_MileageABFeedback_RCol : 36|1@1+ (1,0) [0|1] ""  Auto
+ SG_ Auto_MileageABFeedback_FCol : 32|1@1+ (1,0) [0|1] ""  Auto
+ SG_ Auto_MileageFeedback_CheckSum : 56|8@1+ (1,0) [0|255] ""  Auto
+ SG_ Auto_MileageFeedback_AliveCount : 52|4@1+ (1,0) [0|15] ""  Auto
+ SG_ Auto_MileageABFeedback_Mileage : 8|24@1+ (0.001,0) [0|0] "km"  Auto
+ SG_ Auto_MileageABFeedback_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563037423 Auto_WheelPulseFeedback: 8 VCU
+ SG_ Auto_WhlPulseFeedback_CheckSum : 56|8@1+ (1,0) [0|255] ""  Auto
+ SG_ Auto_WhlPulseFeedback_AliveCount : 52|4@1+ (1,0) [0|15] ""  Auto
+ SG_ Auto_WhlPulseFeedback_RearRight : 24|16@1- (1,0) [0|0] ""  Auto
+ SG_ Auto_WhlPulseFeedback_RearLeft : 8|16@1- (1,0) [0|0] ""  Auto
+ SG_ Auto_WheelPlsFeedback_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563037167 Auto_WheelSpdFeedback: 8 VCU
+ SG_ Auto_WheelSpdFeedback_CheckSum : 56|8@1+ (1,0) [0|255] ""  Auto
+ SG_ Auto_WheelSpdFeedback_AliveCount : 52|4@1- (1,0) [0|15] ""  Auto
+ SG_ Auto_WheelSpdFeedback_RearRight : 24|16@1+ (0.001,-32.768) [-32.768|32.768] "m/s"  Auto
+ SG_ Auto_WheelSpdFeedback_RearLeft : 8|16@1+ (0.001,-32.768) [-32.768|32.768] "m/s"  Auto
+ SG_ Auto_WheelSpdFeedback_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563036911 Auto_OdometerFeedback: 8 VCU
+ SG_ Auto_OdometerFeedback_DefAngle : 48|12@1+ (0.08789,0) [0|360] "бу"  Auto
+ SG_ Auto_OdometerFeedback_Position_Y : 28|20@1- (1,-100000) [-100000|100000] "cm"  Auto
+ SG_ Auto_OdometerFeedback_Position_X : 8|20@1- (1,-100000) [-100000|100000] "cm"  Auto
+ SG_ Auto_OdometerFeedback_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563036880 Auto_OdometerCmd: 8 Auto
+ SG_ Auto_OdometerCmd_AliveCounter : 52|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Auto_MileageCmd_Clear : 16|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Auto_OdometerCmd_CheckSum : 56|8@1+ (1,0) [0|255] ""  VCU
+ SG_ Auto_OdometerCmd_Clear : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Auto_OdometerCmd_Enable : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 2563036655 Auto_PakingFeedBack: 8 VCU
+ SG_ Auto_ParkingFeedBack_CheckSum : 56|8@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_parkingFeedBack_AliveCount : 52|4@1+ (1,0) [0|15] ""  Auto
+ SG_ Auto_ParkingFeedBack_FaultMess : 16|8@1+ (1,0) [0|5] ""  Auto
+ SG_ Auto_ParkingFeedBack_Status : 8|8@1+ (1,0) [0|7] ""  Auto
+ SG_ Auto_PakingFeedBack_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563036399 Auto_BrakingFeedBack: 8 VCU
+ SG_ Auto_BrakingFeedBack_Sts : 20|2@1+ (1,0) [0|3] ""  Auto
+ SG_ Auto_BrakingFeedBack_CheckSum : 56|8@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_BrakingFeedBack_AliveCount : 52|4@1+ (1,0) [0|15] ""  Auto
+ SG_ Auto_BrakingFeedBack_FaultMess : 16|3@1+ (1,0) [0|5] ""  Auto
+ SG_ Auto_BrakingFeedBack_PedalPosti : 8|8@1+ (0.390625,0) [0|100] ""  Auto
+ SG_ Auto_BrakingFeedBack_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563036143 Auto_DriveFeedBack: 8 VCU
+ SG_ Auto_DriveFeedBack_CheckSum : 56|8@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_DriveFeedBack_AliveCount : 52|4@1+ (1,0) [0|15] ""  Auto
+ SG_ Auto_DriveFeedBack_FaultMessage : 24|3@1+ (1,0) [0|5] ""  Auto
+ SG_ Auto_DriveFeedBack_Velocity : 8|16@1+ (0.001,0) [0|0] "m/s"  Auto
+ SG_ Auto_DriveFeedBack_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563035887 Auto_SteeringFeedBack: 8 VCU
+ SG_ Auto_SteeringFeedBack_AliveCount : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Auto_SteeringFeedBack_CheckSum : 56|8@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_SteeringFeedBack_FaultMess : 40|3@1+ (1,0) [0|5] ""  Auto
+ SG_ Auto_SteeringFeedBack_Speed : 24|12@1+ (0.073242,0) [0|300] ""  Auto
+ SG_ Auto_SteeringFeedBack_Angle : 8|12@1+ (0.043945,-90) [-90|89.954775] "бу"  Auto
+ SG_ Auto_SteeringFeedBack_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563035631 Auto_GearFeedBack: 8 VCU
+ SG_ Auto_GearFeedBack_CheckSum : 56|8@1+ (1,0) [0|0] ""  Auto
+ SG_ Auto_GearFedBackAliveCounter : 52|4@1+ (1,0) [0|15] ""  Auto
+ SG_ Auto_GearFeedBack_FaultMessage : 16|3@1+ (1,0) [0|5] ""  Auto
+ SG_ Auto_GearFeedBack_GearPosition : 8|3@1+ (1,0) [0|4] ""  Auto
+ SG_ Auto_GearFeedBack_Available : 0|1@1+ (1,0) [0|1] ""  Auto
+
+BO_ 2563036624 Auto_ParkingCmd: 8 Auto
+ SG_ Auto_ParkingCmd_CheckSum : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ Auto_ParkingCmd_AliveCounter : 52|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Auto_ParkingCmd_ParkingRequest : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Auto_ParkingCmd_ParkingEnable : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 2563036368 Auto_BrakingCmd: 8 Auto
+ SG_ Auto_BrakingCmd_CheckSum : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ Auto_BrakingCmd_AliveCounter : 52|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Auto_BrakingCmdTargetPedalPos : 8|8@1+ (0.390625,0) [0|100] ""  VCU
+ SG_ Auto_BrakingCmd_BrakingEnable : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 2563036112 Auto_DriveCmd: 8 Auto
+ SG_ Auto_DriveCmd_CheckSum : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ Auto_DriveCmd_AliveCounter : 52|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Auto_DriveCmd_TargetVelocity : 8|16@1+ (0.001,0) [0|0] "m/s"  VCU
+ SG_ Auto_DriveCmd_DriveEnable : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 2563035856 Auto_SteeringCmd: 8 Auto
+ SG_ Auto_SteeringCmd_CheckSum : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ Auto_SteeringCmd_AliveCounter : 52|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Auto_SteeringCmd_SteeringSpeed : 24|12@1+ (0.073242,0) [0|300] ""  VCU
+ SG_ Auto_SteeringCmd_TargetAngle : 8|12@1+ (0.043945,-90) [-90|89.954775] "бу"  VCU
+ SG_ Auto_SteeringCmd_SteeringEnable : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 2563035600 Auto_GearCmd: 8 Auto
+ SG_ Auto_GearCmd_CheckSum : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ Auto_GearCmd_AliveCounter : 52|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Auto_GearCmd_TargetGear : 8|3@1+ (1,0) [0|4] ""  VCU
+ SG_ Auto_GearCmd_GearEnable : 0|1@1+ (1,0) [0|1] ""  VCU
+
+
+
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "YHS_CANMatrix1CANB";
+BA_ "GenMsgCycleTime" BO_ 512 1000;
+BA_ "GenMsgCycleTime" BO_ 514 1000;
+BA_ "GenMsgCycleTime" BO_ 513 1000;
+BA_ "GenMsgCycleTime" BO_ 2563037935 50;
+BA_ "GenMsgCycleTime" BO_ 2563037136 10;
+BA_ "GenMsgCycleTime" BO_ 2563037679 20;
+BA_ "GenMsgCycleTime" BO_ 2563037423 50;
+BA_ "GenMsgCycleTime" BO_ 2563037167 50;
+BA_ "GenMsgSendType" BO_ 2563036911 0;
+BA_ "GenMsgCycleTime" BO_ 2563036911 10;
+BA_ "GenMsgSendType" BO_ 2563036880 7;
+BA_ "GenMsgCycleTime" BO_ 2563036880 10;
+BA_ "GenMsgCycleTime" BO_ 2563036655 10;
+BA_ "GenMsgCycleTime" BO_ 2563036143 10;
+BA_ "GenMsgCycleTime" BO_ 2563035887 10;
+BA_ "GenMsgCycleTime" BO_ 2563035631 10;
+BA_ "GenMsgCycleTime" BO_ 2563036624 10;
+BA_ "GenMsgCycleTime" BO_ 2563036368 10;
+BA_ "GenMsgCycleTime" BO_ 2563036112 10;
+BA_ "GenMsgCycleTime" BO_ 2563035856 10;
+BA_ "GenMsgCycleTime" BO_ 2563035600 10;
+
